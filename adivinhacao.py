@@ -15,7 +15,7 @@ for rodada in range (1, total_de_tentativas +1):
 
     if(chute < 1 or chute > 100):
         print("Você deve digitar um número entre 1 e 100!")
-        continue # Continua com a proxima interacao do for
+        continue # Next for interation
 
     acertou = chute == numero_secreto
     maior   = chute > numero_secreto
@@ -23,7 +23,7 @@ for rodada in range (1, total_de_tentativas +1):
 
     if (acertou):
         print("Você acertou!")
-        break # Sai do laço for
+        break # Break lace for
     else:
         if(maior):
             print("Você errou ! O seu chute foi maior do que o número secreto.")
